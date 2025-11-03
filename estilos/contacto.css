@@ -1,0 +1,140 @@
+:root {
+    --criszav-primary: #004d99; 
+    --criszav-accent: #ffd700; 
+    --bs-primary: var(--criszav-primary); 
+}
+.bg-primary {
+    background-color: var(--criszav-primary) !important; 
+}
+.text-primary { color: var(--criszav-primary) !important; } 
+.btn-primary {
+    background-color: var(--criszav-primary);
+    border-color: var(--criszav-primary);
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+.bg-primary-custom, footer { 
+    background-color: #003366 !important; 
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0; 
+}
+.logo-criszav {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    border-radius: 25%;
+    vertical-align: middle;
+}
+.navbar {
+    z-index: 1030;
+}
+.navbar-nav .nav-link:not(.active) {
+    color: #ffffff !important; 
+}
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important; 
+    border-bottom: 2px solid #ffd700; 
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; 
+    color: #ffd700 !important;
+}
+.dropdown-menu {
+    background-color: #003366;
+}
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #003366 ;
+    color: #ffd700;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h5.card-title.text-primary {
+    color: #003366  !important; 
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+h1.fw-bold.text-primary {
+    color: #003366 !important; 
+}
+h2.fw-bold.mb-4.text-primary{
+    color: #003366 ;
+}
+.service-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+.service-card .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    filter: brightness(0.95); 
+    transition: filter 0.3s ease;
+}
+.service-card:hover .card-img-top {
+    filter: brightness(1); 
+}
+.service-card .card-text {
+    color: #495057;
+}
+footer {
+    border-top: 3px solid #ffd700; 
+    color: #ffffff; 
+}
+.social-float-sidebar-criszav {
+    position: fixed;
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%); 
+    z-index: 1050; 
+    display: flex; 
+    flex-direction: column; 
+}
+.social-float-sidebar-criszav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 2px; 
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px 0 0 5px; 
+    transform: translateX(0);
+}
+.social-float-sidebar-criszav a svg {
+    width: 24px;
+    height: 24px;
+}
+.icon-whatsapp { background-color: #25d366; }
+.icon-x { background-color: #0b0c0c; } 
+.icon-facebook { background-color: #1877F2; }
+.icon-instagram { background-color: #C13584; }
+.icon-tiktok { background-color: #000000; } 
+.social-float-sidebar-criszav a:hover {
+    transform: translateX(-5px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.icon-whatsapp:hover { background-color: #128C7E; }
+.icon-x:hover { background-color: #000000; }
+.icon-facebook:hover { background-color: #0d4899; }
+.icon-instagram:hover { background-color: #833AB4; }
+.icon-tiktok:hover { background-color: #222222; }
