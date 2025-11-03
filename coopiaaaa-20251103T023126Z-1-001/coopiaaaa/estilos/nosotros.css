@@ -1,0 +1,148 @@
+:root {
+    --criszav-primary:#004d99; 
+    --criszav-accent: #ffd700; 
+    --bs-primary: var(--criszav-primary); 
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    padding-top: 70px; 
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+.logo-criszav {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    border-radius: 25%;
+    vertical-align: middle;
+}
+.bg-primary { background-color: var(--criszav-primary) !important; } 
+.text-primary { color: var(--criszav-primary) !important; } 
+.btn-primary {
+    background-color: var(--criszav-primary);
+    border-color: var(--criszav-primary);
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+    background-color: #004d99; 
+    border-color: #004d99;
+    transform: translateY(-1px);
+}
+.bg-dark { background-color: #212529 !important; }
+.navbar-brand svg { width: 52px; height: 52px; }
+.navbar-nav .nav-link { transition: color 0.3s ease, border-bottom 0.3s ease; }
+.navbar-nav .nav-link:not(.active) { color: #ffffff !important; }
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+    color: var(--criszav-accent) !important; 
+    border-bottom: 2px solid var(--criszav-accent); 
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .dropdown-toggle.active {
+    font-weight: bold;
+    border-bottom: 3px solid var(--criszav-accent); 
+    color: var(--criszav-accent) !important;
+}
+.dropdown-menu {
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translateY(5px);
+    background-color: var(--criszav-primary); border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; opacity: 1; visibility: visible;
+    transform: translateY(0); margin-top: 0; 
+    border-top-left-radius: 0; border-top-right-radius: 0;
+}
+.dropdown-item { color: #ffffff !important; font-weight: 500; transition: background-color 0.2s, color 0.2s; }
+.dropdown-item:hover { background-color: var(--criszav-accent) !important; color: var(--criszav-primary) !important; }
+header.bg-light {
+    min-height: 40vh; 
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa !important; 
+    border-bottom: 5px solid var(--criszav-accent);
+}
+.row {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.row > [class*='col-'] {
+    float: none;
+    max-width: 100%;
+}
+.card.shadow-sm {
+    border: 1px solid #ddd; 
+    transition: all 0.3s ease-in-out; 
+    border-radius: 0.75rem; 
+}
+.card.shadow-sm:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 1rem 3rem rgba(0, 51, 102, 0.2) !important; 
+    border-color: var(--criszav-accent);
+}
+.card-body {
+    text-align: center; 
+    padding: 1.5rem; 
+}
+.about-img {
+    max-height: 450px; 
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 0.75rem; 
+}
+.card-img-top-custom {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+footer {
+    background-color: var(--criszav-primary) !important;
+    border-top: 5px solid var(--criszav-accent);
+    color: #f0f0f0;
+}
+.social-float-sidebar-criszav {
+    position: fixed;
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%); 
+    z-index: 1050; 
+    display: flex; 
+    flex-direction: column; 
+}
+.social-float-sidebar-criszav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 2px; 
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px 0 0 5px; 
+    transform: translateX(0);
+}
+.social-float-sidebar-criszav a svg {
+    width: 24px;
+    height: 24px;
+}
+.icon-whatsapp { background-color: #25d366; }
+.icon-x { background-color: #0b0c0c; } 
+.icon-facebook { background-color: #1877F2; }
+.icon-instagram { background-color: #C13584; }
+.icon-tiktok { background-color: #000000; } 
+.social-float-sidebar-criszav a:hover {
+    transform: translateX(-5px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.icon-whatsapp:hover { background-color: #128C7E; }
+.icon-x:hover { background-color: #000000; }
+.icon-facebook:hover { background-color: #0d4899; }
+.icon-instagram:hover { background-color: #833AB4; }
+.icon-tiktok:hover { background-color: #222222; }
